@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/admin', 'AdminController@index')->name('home');
+
+Route::post('/nuevo-perro', 'AdminController@nuevoPerro')->name('nuevo.perro');
+Route::post('/nuevo-cachorro', 'AdminController@nuevoCachorro')->name('nuevo.cachorro');
