@@ -21,3 +21,6 @@ Route::get('/admin', 'AdminController@index')->name('home');
 
 Route::post('/nuevo-perro', 'AdminController@nuevoPerro')->name('nuevo.perro');
 Route::post('/nuevo-cachorro', 'AdminController@nuevoCachorro')->name('nuevo.cachorro');
+
+Route::post('/borrar-perro', 'AdminController@borrarPerro')->name('borrar.perro');
+Route::post('/borrar-cachorro', 'AdminController@borrarCachorro')->name('borrar.cachorro');

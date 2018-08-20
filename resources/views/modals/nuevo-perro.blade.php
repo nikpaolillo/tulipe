@@ -1,6 +1,6 @@
 <div class="modal fade" id="modal-nuevo-perro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
-    <form action="{{ route('nuevo.perro') }}" method="POST">
+    <form action="{{ route('nuevo.perro') }}" method="POST" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -13,15 +13,20 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <input class="form-control" type="text" placeholder="Nombre" name="nombre">
+                            <input required class="form-control" type="text" placeholder="Nombre" name="nombre">
                         </div>
                         <div class="col-md-6">
-                            <input class="form-control" type="text" placeholder="Tipo" name="tipo">
+                            <input required class="form-control" type="text" placeholder="Tipo" name="tipo">
                         </div>
                     </div>
-                    <div style="margin-top:15px" class="row form-cliente-distancia">
+                    <div style="margin-top:15px" class="row">
                         <div class="col-md-12">
-                            <textarea class="form-control" placeholder="Descripcion" name="descripcion"></textarea>
+                            <textarea required class="form-control" placeholder="Descripcion" name="descripcion"></textarea>
+                        </div>
+                    </div>
+                    <div style="margin-top:15px" class="row">
+                        <div class="col-md-12">
+                            <input type="file" class="form-control" name="imagen">
                         </div>
                     </div>
                 </div>

@@ -21,6 +21,12 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $perros = Perro::all();
@@ -31,23 +37,47 @@ class AdminController extends Controller
 
     public function nuevoPerro(Request $request)
     {
+        $request->file('imagen')->store('public');
+
+        $file_name = $request->file('imagen')->hashName();
+
         Perro::create([
-           'nombre' => $request->nombre,
-           'tipo' => $request->tipo,
-           'descripcion' => $request->descripcion
+            'nombre' => $request->nombre,
+            'tipo' => $request->tipo,
+            'descripcion' => $request->descripcion,
+            'imagen' => $file_name
         ]);
 
         return redirect()->back()->with('status', '¡Perro añadido!');
     }
 
+    public function borrarPerro(Request $request)
+    {
+        $perro = Perro::where('id', $request->id)->delete();
+
+        return $perro;
+    }
+
     public function nuevoCachorro(Request $request)
     {
+        $request->file('imagen')->store('public');
+
+        $file_name = $request->file('imagen')->hashName();
+
         Cachorro::create([
             'nombre' => $request->nombre,
             'tipo' => $request->tipo,
-            'descripcion' => $request->descripcion
+            'descripcion' => $request->descripcion,
+            'imagen' => $file_name
         ]);
 
         return Redirect::to(URL::previous() . "#cachorros");
+    }
+
+    public function borrarCachorro(Request $request)
+    {
+        $cachorro = Cachorro::where('id', $request->id)->delete();
+
+        return $cachorro;
     }
 }

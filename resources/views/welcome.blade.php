@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Remises Transfer</title>
+    <title>Tulipe Noir</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="" />
@@ -30,35 +30,26 @@
             <section>
                 <div class="content">
                     <header>
-                        <a href="#" class="icon fa-building"><span class="label">Icon</span></a>
-                        <h3>Empresa</h3>
+                        <i style="margin-bottom:5px" class="far fa-heart fa-5x"></i>
+                        <h3>Machos en servicio de stud</h3>
                     </header>
-                    <p>Ingrese a nuestro portal de empresas, donde podra efectuar todas sus operaciones</p>
-                    <ul>
-                        <li>Ingresar Reservas</li>
-                        <li>Consultar estado de cuenta</li>
-                        <li>Revisar sus viajes realizados</li>
-                    </ul>
                 </div>
             </section>
             <section>
                 <div class="content">
                     <header>
-                        <a href="#" class="icon fa-dollar"><span class="label">Icon</span></a>
-                        <h3>Tarifas</h3>
+                        <i style="margin-bottom:5px" class="fab fa-pied-piper-hat fa-5x"></i>
+                        <h3>Adiestramiento</h3>
                     </header>
-                    <p>Calcule el precio de sus viajes.</p>
-                    <p>Solo debe ingresar el origen y destino de su viaje y nuestro sistema calculara el importe.</p>
+                    <p>Deportivo y comiciliario (problemas de conducta)</p>
                 </div>
             </section>
             <section>
                 <div class="content">
                     <header>
-                        <a href="#" class="icon fa-phone"><span class="label">Icon</span></a>
-                        <h3>Contacto</h3>
+                        <i style="margin-bottom:5px" class="fas fa-bed fa-5x"></i>
+                        <h3>Pensionado</h3>
                     </header>
-                    <p>Nuestro telefono de contacto</p>
-                    <p>4489-0248</p>
                 </div>
             </section>
         </div>
