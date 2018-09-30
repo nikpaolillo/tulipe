@@ -37,7 +37,7 @@ class AdminController extends Controller
 
     public function nuevoPerro(Request $request)
     {
-        $request->file('imagen')->store('public');
+        $request->file('imagen')->store('public/perros');
 
         $file_name = $request->file('imagen')->hashName();
 
@@ -60,7 +60,7 @@ class AdminController extends Controller
 
     public function nuevoCachorro(Request $request)
     {
-        $request->file('imagen')->store('public');
+        $request->file('imagen')->store('public/cachorros');
 
         $file_name = $request->file('imagen')->hashName();
 

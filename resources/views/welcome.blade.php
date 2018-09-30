@@ -14,8 +14,8 @@
 <section id="banner">
     <div class="inner">
         <h1>Tulipe Noir</h1>
-        <a href="{{ route('login')  }}"><button class="btn btn-danger">Cachorros</button></a>
-        <a style="margin-left:10px" href="{{ route('login')  }}"><button class="btn btn-danger">Perros</button></a>
+        <a href="{{ route('galeria.cachorros')  }}"><button class="btn btn-danger">Cachorros</button></a>
+        <a style="margin-left:10px" href="{{ route('galeria.perros')  }}"><button class="btn btn-danger">Perros</button></a>
     </div>
 
 </section>

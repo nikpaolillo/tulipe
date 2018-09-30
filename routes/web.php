@@ -24,3 +24,6 @@ Route::post('/nuevo-cachorro', 'AdminController@nuevoCachorro')->name('nuevo.cac
 
 Route::post('/borrar-perro', 'AdminController@borrarPerro')->name('borrar.perro');
 Route::post('/borrar-cachorro', 'AdminController@borrarCachorro')->name('borrar.cachorro');
+
+Route::get('/cachorros', 'GaleriaController@indexCachorros')->name('galeria.cachorros');
+Route::get('/perros', 'GaleriaController@indexPerros')->name('galeria.perros');

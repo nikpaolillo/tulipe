@@ -23,7 +23,7 @@
         <tbody>
         @foreach($perros as $perro)
             <tr>
-                <td><img style="width:50px;height:50px" src="{{ asset('storage/'.$perro->imagen) }}" alt=""></td>
+                <td ><img style="width:50px;height:50px" src="{{ asset('storage/'.$perro->imagen) }}" alt=""></td>
                 <td>{{ $perro->nombre }}</td>
                 <td>{{ $perro->tipo }}</td>
                 <td>{{ $perro->descripcion }}</td>
